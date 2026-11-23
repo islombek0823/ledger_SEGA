@@ -3,7 +3,7 @@ from collections import deque
 
 class QueueManager:
 
-    def _init_(self):
+    def __init__(self):
         self.jobs = deque()
         self.job_id = 1
 
@@ -40,7 +40,7 @@ class QueueManager:
 
 
 # Test Queue Management
-if _name_ == "_main_":
+if __name__ == "__main__":
 
     queue = QueueManager()
 
